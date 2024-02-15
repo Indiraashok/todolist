@@ -65,7 +65,7 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-/* Add background image for checkbox */
+
 .task-checkbox {
     appearance: none;
     -webkit-appearance:square-button;
@@ -80,9 +80,7 @@ button:hover {
     top: 50%;
     transform: translateY(-50%);
 }
-
-/* Change background image for checked checkbox */
-.task-checkbox:{
+.task-checkbox{
     margin-right: 10px;
 }
 /* Change color of checkbox label after clicking it */
