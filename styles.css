@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('todolist1.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background-image: url('todolist3.jpg');
+    background-color:none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color:navy;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;   
+}
+
+li {
+    position: relative;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: none;
+    border-radius: 5px;
+    border:black;
+    display: flex;
+    /*align-items: center;*/
+    overflow: hidden;
+    flex-direction: column;
+}
+
+input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #1e1212;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+/* Add background image for checkbox */
+.task-checkbox {
+    appearance: none;
+    -webkit-appearance:square-button;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    cursor: pointer;
+    border:slategrey;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Change background image for checked checkbox */
+.task-checkbox:{
+    margin-right: 10px;
+}
+/* Change color of checkbox label after clicking it */
+.task-checkbox:checked + label {
+    color: #f7f6f9;
+    
+    /* Change color to your desired color */
+}
+label{
+    margin-left: 30px;
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: auto;
+}
+.delete-btn{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+    background-color: #ff3333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
